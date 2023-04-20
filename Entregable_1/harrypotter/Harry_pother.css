@@ -1,0 +1,45 @@
+.nav-enlace{
+    display: inline-block;
+    background: none;
+    padding: 50px 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-enlace:hover{
+    background: url(img/boton_harry.jpg);
+}
+
+nav{
+    background: url(img/banner_harry.png);
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    width: 760px;
+    height: 110px;
+}
+
+section{
+    width: 1015px;
+    margin-top: 10px;
+    background: green;
+    float: right;
+
+}
+
+section:nth-of-type(2) {
+    width: 1015px;
+    height: 300px;
+    float: right;
+    background: blue;
+    
+}
+
+aside{
+    background: red;
+    width: 460px;
+    height: 4000px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+}

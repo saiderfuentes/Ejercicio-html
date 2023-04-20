@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Autor" content="Saider Jesus Guarguati">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Rick_Morty.css">
+    <title>inicio</title>
+    <style>
+        input:valid {
+            border-color: green;
+        }
+
+        input:invalid {
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!- banner de Rick_Morty ->
+    </header>
+    <nav>
+        <button class="nav-boton" onclick="accion()">Menu</button>
+        <a href="../home/home.html" class="nav-enlace desaparece">Inicio</a>
+        <a href="#" class="nav-enlace desaparece">Personajes</a>
+        <a href="#" class="nav-enlace desaparece">Imagenes</a>
+        <a href="#" class="nav-enlace desaparece">Foro</a>
+        <a href="../harrypotter/Harry_pother.html" class="nav-enlace desaparece">Pagina Harry</a>
+        <a href="../productos/productos.html" class="nav-enlace desaparece">Mercancia </a>
+    </nav>
+
+    <body>
+        <section>
+            <p align="justify">
+                <font color="#20731D" size="6px"> ¡Bienvenidos a un viaje a través del multiverso con Rick y Morty!
+                </font>
+                <br>
+                <font color="black" size="4px"> Prepárense para una emocionante odisea llena de ciencia ficción, humor
+                    negro
+                    y situaciones caóticas mientras seguimos las peripecias de Rick Sánchez, un científico loco y
+                    alcohólico, y su nieto Morty Smith, un adolescente tímido y ansioso<br>Rick y Morty es una popular
+                    serie
+                    de animación para adultos creada por
+                    Justin Roiland y Dan Harmon. La serie se estrenó en 2013 y ha ganado una gran cantidad de seguidores
+                    gracias a su estilo irreverente, su ingenio retorcido y su capacidad para explorar temas complejos a
+                    través de historias de ciencia ficción y viajes interdimensionales.</font>
+            </p>
+            <br>
+            <!- gif ->
+                <center>
+                    <img src="img/Rick1.gif" alt="gif" width="200" height="150">
+                    <img src="img/Rick2.gif" alt="gif" width="200" height="150">
+                </center>
+                <br>
+                <!- texto ->
+                    <p align="center">
+                        <font color="black" size="4px"> La premisa de la serie gira en torno a las aventuras de Rick y
+                            Morty a
+                            través de diferentes dimensiones y realidades, mientras enfrentan peligros, conocen
+                            personajes
+                            excéntricos y se meten en problemas intergalácticos. Rick, un genio científico con poco
+                            sentido
+                            moral,
+                            utiliza su portal dimensional y su ingenio para llevar a Morty a lugares increíbles, pero
+                            también
+                            peligrosos, mientras Morty intenta lidiar con su vida cotidiana, la escuela y las
+                            consecuencias de
+                            las
+                            acciones de su abuelo.</font>
+                    </p>
+        </section>
+        <!- registro ->
+
+            <aside>
+                <form>
+                    <label for="Correo">Email</label>
+                    <input id="Correo" type="email" name="Correo"><br>
+                    <label for="Password">Passw</label>
+                    <input id="Password" type="password" name="Password"><br>
+                    <input type="submit" value="Entrar">
+                    <input type="reset" value="Borrar"><br><br><br>
+                    <input type="button" value="Registrarse">
+                </form>
+                <p align="justify">Estar suscrito a una página web puede tener varios beneficios, dependiendo del tipo de sitio y del
+                    contenido que ofrezca. Algunos posibles beneficios de estar suscrito a una página web incluyen:
+                    <br><br>
+                    <ul align="left">
+                        <li>Contenido exclusivo </li>
+                        <li>Actualizaciones y notificaciones</li>
+                        <li>Comunidad y participación</li>
+                        <li>Descuentos y beneficios especiales</li>
+                        <li>Soporte y atención al cliente</li>
+                    </ul>
+                        
+                </p>
+            </aside>
+            <!- redes sociales ->
+                <aside>
+                    <nav>
+                        <a href="#"><img src="img/facebook.png" clase="redes" height="40px" width="40px"
+                                alt="icono facebook"></a>
+                        <a href="#"><img src="img/instagram.jpg" height="40px" width="40px"
+                                alt="icono instagran"></a>
+                        <a href="#"><img src="img/whasapp.png" height="40px" width="40px" alt="icono whashapp"></a>
+                        <a href="#"><img src="img/twitter.png" height="40px" width="40px" alt="icono twitter"></a>
+                    </nav>
+                </aside>
+    </body>
+
+    <script>
+        function accion() {
+            console.log('esta funcionando el boton');
+            var ancla = document.getElementsByClassName('nav-enlace');
+            for (var i = 0; i < ancla.length; i++) {
+                ancla[i].classList.toggle('desaparece');
+            }
+        }
+    </script>
+</body>
+
+<footer>
+    &COPY; Mi pagina web - Todos los dderechos reservados
+</footer>
+
+</html>
